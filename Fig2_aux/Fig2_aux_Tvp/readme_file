@@ -1,0 +1,59 @@
+%--------------------------------------------------------------------------------
+% readme_Lorenz_system_v.txt 
+%--------------------------------------------------------------------------------
+% This directory contains programs related with NGRC DDE learned from the
+% Lorenz system; 
+%--------------------------------------------------------------------------------
+% We compute the Tvp=Tvp(Lc) statistics for many various random 
+% initial conditions;
+% Tvp -> valid prediction time;
+% Lc -> Conditional Lyapunov Exponent (CLE);
+%--------------------------------------------------------------------------------
+% Here we compute the statistics of valid prediction
+% vs CLE (Lc) for NGRC DDE system learned by the Lorenz system; the statistics arise
+% due to random initial conditions on chaotic attractor; the
+% case without imposing CLE is also included;
+%--------------------------------------------------------------------------------
+% Lorenz_signal.m -> this function computes the time series of variable x(t) of
+% exact Lorenz system; this function is used by the file 
+% [plot_Lorenz_signal_v2.m]; 
+%--------------------------------------------------------------------------------
+% plot_Lorenz_signal_v2.m -> this file computes the time series of variable x(t) 
+% of exact Lorenz system; this data of time series is subsequently saved 
+% in a data file; this file uses the function [Lorenz_signal.m];
+%--------------------------------------------------------------------------------
+% plot_Lorenz_signal.m -> this file computes and plots the time series of
+% variable x(t) of exact Lorenz system; the computed dynamics are plotted 
+% in a graph; this file uses the function [Lorenz_signal.m];
+% this file differs from file [plot_Lorenz_signal_v2.m] by the fact that it
+% computes and plots much shorter x(t) dynamics;
+%--------------------------------------------------------------------------------
+% Lorenz_scan_Lc_aut_v.m -> this file computes the statistics of valid prediction
+% time Tvp vs the CLE Lc; for each value of Lc we perform 500 numerical experiments,
+% with random initial conditions on the chaotic attractor; the computed data are
+% saved in the data file; 
+%--------------------------------------------------------------------------------
+% Lor_ngrc_psd_v2.m -> this file plots the PSD for the x(t) time series from the
+% exact and from the NGRC DDE system learned from the Lorenz system; 
+%--------------------------------------------------------------------------------
+% These files are auxiliary functions for the NGRC DDE system:
+%----------------------------------------------------------------------------
+% generate_all_exp_matreces.m
+% generateCheb_feat_vect.m
+% generateChebyshevs.m
+% generateChebyshevsDiffLyap.m
+% genExponents.m
+%----------------------------------------------------------------------------
+% matr.mat -> contains power matrices necessary for composing Tschebyshev
+% polynomials;
+%----------------------------------------------------------------------------
+% WelchPowerSpectralDensity.m -> this function computes the PSD of 
+% underlying time series by using the FFT method; this function
+% uses the auxillary function [Hann.m];
+%----------------------------------------------------------------------------
+% Hann.m -> this is an auxillary function used by the function
+% [WelchPowerSpectralDensity.m];
+%----------------------------------------------------------------------------
+
+
+
