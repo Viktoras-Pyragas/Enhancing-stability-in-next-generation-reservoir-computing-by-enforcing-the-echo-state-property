@@ -1,0 +1,30 @@
+%--------------------------------------------------------------------------
+% readme_Lorenz_PSD_PDF_t.txt
+%--------------------------------------------------------------------------
+In this directory we plot figures for the Lorenz system;
+%--------------------------------------------------------------------------
+\Lorenz_graphs\Lorenz_PSD_PDF_t\ -> Here we plot the PSD for Lorenz system, for
+the original system, and for NGRC DDE system learned from the Lorenz system;
+We here also plot the PDF for both cases, the original Lorenz system, and for 
+the NGRC DDE system learned from Lorenz system; 
+%--------------------------------------------------------------------------
+Lorenz_psd_pdf_v.m -> this file plots the graph;
+%--------------------------------------------------------------------------
+Xvt4t.mat -> tis is a data file containing the results of computation of 
+original Lorenz system; here are dynamics of variable x(t);
+%--------------------------------------------------------------------------
+Tesc_XP5t.mat -> tis is a data file containing the results of computation of 
+NGRC DDE system learned by Lorenz system; here are dynamics of replicated 
+variable x(t);
+%--------------------------------------------------------------------------
+%---NOTE!!!----------------------------------------------------------------
+The time series for NGRC DDE system (learned from the chaotic Lorenz system)
+is computed in /Fig2_aux/Fig2_aux_Tesc/ by file [Lorenz_scan_esc_Lc_aut_v2t.m];
+%--------------------------------------------------------------------------
+WelchPowerSpectralDensity.m -> this is a function that computes the PSD of
+a given time series using the FFT algorithm; 
+%--------------------------------------------------------------------------
+Hann.m -> this is an auxiliary function; it is used by the function
+[WelchPowerSpectralDensity.m];
+%--------------------------------------------------------------------------
+  
