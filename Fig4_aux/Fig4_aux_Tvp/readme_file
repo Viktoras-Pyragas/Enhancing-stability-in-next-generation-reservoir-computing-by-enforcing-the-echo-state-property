@@ -1,0 +1,27 @@
+%------------------------------------------------------------------------------
+% readme_HMR_System_Tvp_Lc.txt;
+%------------------------------------------------------------------------------
+% Here we learn the NGRC DDE system from the HMR neuron system; Afterwards, 
+% we integrate the closed NGRC DDE system for many initial conditions, and,
+% for each in. cond. we calculate the time of valid prediction; then we 
+% put the result into a mat-file; 
+% The computations are performed by program [HMR_scan_Lc_aut_vt2.m];
+%------------------------------------------------------------------------------
+% HMR_scan_Lc_aut_vt2.m -> this file scans the parameter Lc (of NGRC DDE system
+% learned from the HMR system);  
+%------------------------------------------------------------------------------
+% HMR_signal.m -> this auxiliary function compues the dynamics of the original 
+% HMR system with given initial conditions and for a given time interval with a 
+% given time step; this function is used by the file [HMR_scan_Lc_aut_vt2.m];
+%-----------------------------------------------------------------------------
+% These files are auxiliary functions for the NGRC DDE system:
+%----------------------------------------------------------------------------
+% generate_all_exp_matreces.m
+% generateCheb_feat_vect.m
+% generateChebyshevs.m
+% generateChebyshevsDiffLyap.m
+% genExponents.m
+%----------------------------------------------------------------------------
+% matr.mat -> contains power matrices necessary for composing Tschebyshev
+% polynomials;
+%----------------------------------------------------------------------------
