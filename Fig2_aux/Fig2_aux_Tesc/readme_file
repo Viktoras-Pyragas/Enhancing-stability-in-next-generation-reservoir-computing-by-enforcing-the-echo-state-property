@@ -1,0 +1,33 @@
+%--------------------------------------------------------------------------------
+% readme_Lorenz_System_escape_Lc.txt
+%--------------------------------------------------------------------------------
+% Here we compute the statistics of escape time (from
+% chaotic attractor) for NGRC DDE system learned from the Lorenz system;
+% We compute these statistics for various values of imposed CLE (Lc); the
+% case without imposing CLE is also included;
+%--------------------------------------------------------------------------------
+% Lorenz_scan_esc_Lc_aut_v2t.m -> In this file we first learn the NGRC DDE system
+% from the Lorenz system, and then we integrate the closed NGRC system for various 
+% initial cond-ns; the CLE (Lc) is scanned, and we thus get the dependence of statistics
+% of escape time (from chaotic attractor) for various Lc values;
+%--------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------
+% The used par-ters (for NGRC DDE):
+% h=0.01; tau=0.15; bet=1e-7; degree=7; Ndel=5;
+% NTpr=1000; (number of num-cal exp-nts for each Lc value);
+%--------------------------------------------------------------------------------
+% Lorenz_signal.m -> this function computes the time series x(t) for the
+% exact Lorenz system; this function is used in the file 
+% [Lorenz_scan_esc_Lc_aut_v2t.m];
+%--------------------------------------------------------------------------------
+% These files are auxiliary functions for the NGRC DDE system:
+%----------------------------------------------------------------------------
+% generate_all_exp_matreces.m
+% generateCheb_feat_vect.m
+% generateChebyshevs.m
+% generateChebyshevsDiffLyap.m
+% genExponents.m
+%----------------------------------------------------------------------------
+% matr.mat -> contains power matrices necessary for composing Tschebyshev
+% polynomials;
+%----------------------------------------------------------------------------
