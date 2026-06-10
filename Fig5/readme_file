@@ -1,0 +1,26 @@
+
+%--------------------------------------------------------------------------
+% readme_HMR_graphs.txt
+%--------------------------------------------------------------------------
+In this directory we plot figures for the HMR neuron system;
+%--------------------------------------------------------------------------
+\HMR_graphs\HMR_Tn_map_Tn_pdf\ -> Here we plot the recurrent map Tn1=f(Tn), and the
+PDF for the HMR neuron system; We plot graphs for both cases, the original HMR system, and the
+NGRC DDE system learned from the original system;
+Here Tn is the time interval between the n-th and (n+1)-st spikes of variable x(t);
+PDF is plotted vs the time intervals Tn;
+%--------------------------------------------------------------------------
+plot_HMR_map_pdf_v.m -> this file plots the graph;
+%--------------------------------------------------------------------------
+Ut_dyn_v2t.mat -> this data file contains the time series of the original HMR 
+neuron model;
+XP_dyn_v2t.mat -> this data file contains the time series of the NGRC DDE
+system learned from the HMR system;
+%--------------------------------------------------------------------------
+%---NOTE!!!----------------------------------------------------------------
+The time series for NGRC DDE system (learned from HMR neuron model) is 
+computed in /Fig4_aux/Fig4_aux_Tesc/ by the file [HMR_scan_Lc_aut_vt2.m]; 
+%--------------------------------------------------------------------------
+
+
+  
