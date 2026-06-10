@@ -1,0 +1,29 @@
+%----------------------------------------------------------------------------
+% readme_HMR_System_bif_exact_v.txt
+%----------------------------------------------------------------------------
+% In this directory we integrate the HMR neurons system, and compute it's
+% bifurcation diagram;
+%----------------------------------------------------------------------------
+% Here we list the main files:
+%----------------------------------------------------------------------------
+% HMR_signal.m -> this function computes the chaotic signal of the HMR neurons
+% system; only one neuron is involved;
+%----------------------------------------------------------------------------
+% plot_HMR_signal_v2.m -> this function computes and plots the dynamics of chaotic 
+% HMR neurons model; thie file uses the auxiliary function [HMR_signal.m];
+%----------------------------------------------------------------------------
+% HMR_X_exact_bif_diagram_v3.m -> this file computes the bifurcation diagram
+% for the chaotic HMR neurons model; the computed results are saved in the 
+% data file [result_exact_v.mat]; the bifurcation diagram is computed from
+% the time series which is computed by this same program; 
+%----------------------------------------------------------------------------
+% plot_bif_exact_v.m -> this function plots the bifurcation diagram for the
+% HMR neurons model; this function is used in the file 
+% [HMR_X_exact_bif_diagram_v3.m];
+%----------------------------------------------------------------------------
+% result_exact_v.mat -> this data file contains points of the bifurcation diagram
+% of the HMR neurons model;
+%----------------------------------------------------------------------------
+% Xvt.mat -> this data file contains dynamics of the x(t) variable of the HMR
+% neurons model;
+%----------------------------------------------------------------------------
