@@ -1,0 +1,22 @@
+%--------------------------------------------------------------------------
+% readme_HMR_graphs.txt
+%--------------------------------------------------------------------------
+In this directory we plot figures for the HMR neuron system;
+%--------------------------------------------------------------------------
+\HMR_graphs\HMR_bif_graph_t\ -> Here we plot the bifurcation diagram for the
+HMR neuron system; first, we plot the diagram for the original HMR system, and
+next, for the NGRC DDE syste which was learned by the original system at several
+values of system parameters; We here also involve the requirement for the traversal LE
+to be negative (during the learning phase); 
+%--------------------------------------------------------------------------
+plot_HMR_bif_t.m -> this file plots the graph;
+%--------------------------------------------------------------------------
+result_ngrc_v6t.mat -> this is the data file with results by computing the NGRC DDE
+system learned from the HMR system; this file is computed in the directory
+/Fig6_aux/Fig6_aux_orig/ by file [HMR_X_exact_bif_diagram_v3.m];
+result_exact_v.mat -> this is the data file with results by computing original HMR 
+neuron system; this file is computed in the directory /Fig6_aux/Fig6_aux_NGRC/
+by file [HMR_X_ngrc_bif_diagram_v6.m];
+%--------------------------------------------------------------------------
+
+  
