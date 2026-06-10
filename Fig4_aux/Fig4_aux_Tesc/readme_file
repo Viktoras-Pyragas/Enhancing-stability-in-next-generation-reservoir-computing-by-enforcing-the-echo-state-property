@@ -1,0 +1,36 @@
+-%-----------------------------------------------------------------------------
+% readme_HMR_System_Tesc_Lc.txt
+%-----------------------------------------------------------------------------
+% In this directory we deal with NGRC DDE system learned from the HMR system;
+%-----------------------------------------------------------------------------
+% Here we list the files involved in this directory;
+%-----------------------------------------------------------------------------
+% HMR_scan_Lc_aut_vt2.m -> in this file the NGRC DDE system is learned by the
+% HMR neurons model, and then the closed NGRC system is integrated independently,
+% replicating the chaotic attractor; we here scan the NGRC parameter Lc, and for 
+% each of them compute the statistics of escape time Tesc;
+%-----------------------------------------------------------------------------
+% HMR_signal.m -> this auxiliary function compues the dynamics of the original 
+% HMR system with given initial conditions and for a given time interval with a 
+% given time step; this function is used by the file [HMR_scan_Lc_aut_vt2.m];
+%-----------------------------------------------------------------------------
+% XPt_record.mat -> this data file contains the dynamics of closed NGRC DDE system, previously
+% learned by the HMR neuron model; this dynamics is computed by program 
+% [HMR_scan_Lc_aut_vt2.m] for specified value of Lc; the dynamics are plotted
+% in the file [plot_XPt_v.m];
+%-----------------------------------------------------------------------------
+% plot_XPt_v.m -> this file plots the dynamics of NGRC DDE learned by HMR system;
+% the data are taken from [XPt_record.mat];
+%-----------------------------------------------------------------------------
+% These files are auxiliary functions for the NGRC DDE system:
+%----------------------------------------------------------------------------
+% generate_all_exp_matreces.m
+% generateCheb_feat_vect.m
+% generateChebyshevs.m
+% generateChebyshevsDiffLyap.m
+% genExponents.m
+%----------------------------------------------------------------------------
+% matr.mat -> contains power matrices necessary for composing Tschebyshev
+% polynomials;
+%----------------------------------------------------------------------------
+
