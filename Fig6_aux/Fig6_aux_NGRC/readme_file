@@ -1,0 +1,51 @@
+%----------------------------------------------------------------------------
+% readme_HMR_System_pars_bif_vt.txt
+%----------------------------------------------------------------------------
+% In this directory we use the NGRC DDE system in order to reproduce the
+% bifurcation tree for the HMR neuron system;
+% The NGRC DDE system is learned from the x(t) signal of HMR neuron system;
+% During learning we impose the requirement for the Transversal Lyapunov 
+% Exponent (TLE) to be some negative value;
+% The learning is performed at several system parameters; subsequently,
+% we scan the system parameter, and compute the bifurcations with NGRC DDE;
+%----------------------------------------------------------------------------
+% Below we list the main files in this directory;
+%----------------------------------------------------------------------------
+% HMR_X_ngrc_par_aut_v6.m -> in this file we integrate the closed NGRC DDE
+% system after learning; it is useful for searching optimal NGRC DDE system's
+% parameters; the file uses the auxiliary function [HMR_signal.m]; it
+% is necessary to produce the exact time series which will be used for
+% learning of the NGRC DDE system;
+%----------------------------------------------------------------------------
+% HMR_X_ngrc_bif_diagram_v6.m -> this file computes the whole bifurcation
+% diagram from NGRC DDE system after learning at several parameters values;
+% this file uses the auxiliary function [HMR_signal_v2.m] to produce the 
+% exact time series of HMR system;  
+%----------------------------------------------------------------------------
+% plot_bif_tot_v.m -> this program plots the bifurcation diagrams, computed from the
+% both sources: from exact HMR neurons system, and from the NGRC DDE system;
+% this function is used by program
+% [HMR_X_ngrc_bif_diagram_v6.m];
+%----------------------------------------------------------------------------
+% HMR_signal_v2.m -> this auxiliary function computes the dynamics of 
+% original HMR system; this function makes a "warming up" before computing the
+% necessary time series; the "warming up" means that the system is run for a long
+% time and it's dynamics is not recorded; this procedure is useful as one
+% changes the system parameter; this function is used by program
+% [HMR_X_ngrc_bif_diagram_v6.m];
+%----------------------------------------------------------------------------
+% These files are auxiliary functions for the NGRC DDE system:
+%----------------------------------------------------------------------------
+% generate_all_exp_matreces.m
+% generateCheb_feat_vect.m
+% generateChebyshevs.m
+% generateChebyshevsDiffLyap.m
+% genExponents.m
+%----------------------------------------------------------------------------
+% matr.mat -> contains power matrices necessary for composing Tschebyshev
+% polynomials;
+%----------------------------------------------------------------------------
+% result_ngrc_v6t.mat -> data file, contains the results of computions of
+% bifurcation diagram with NGRC DDE system; this file is computed by
+% program [HMR_X_ngrc_bif_diagram_v6.m];
+%----------------------------------------------------------------------------
