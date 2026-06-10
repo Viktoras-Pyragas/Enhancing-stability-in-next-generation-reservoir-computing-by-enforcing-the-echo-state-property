@@ -1,0 +1,48 @@
+
+%--------------------------------------------------------------------------
+% readme_HMR_Tvp_Tesc_Lc_graph_t3.txt
+%--------------------------------------------------------------------------
+In this directory we plot figures for the HMR neuron system;
+%--------------------------------------------------------------------------
+Here we plot the statistics for the NGRC DDE system learned by the HMR system; 
+We compute Tvp and Tesc (see below);
+
+Computing Tvp -> We scan the NGRC parameter Lc (Transversal LE), and for each
+value of Lc perform 500 numerical experiments with random initial conditions of the
+chaotic attractor; for each experiment, we compute the time at which the NGRC
+solution escapes from the small window from the original system (at the start 
+the original system and NGRC are set at the same initial conditions), i.e. we
+compute 500 values of Tvp (time of valid prediction), and plot the quartiles for them;
+
+Computing Tesc ->  We scan the NGRC parameter Lc (Transversal LE), and for each
+value of Lc perform 500 numerical experiments with random initial conditions of the
+chaotic attractor; for each experiment, we compute the time at which the NGRC 
+solution escapes from the chaotic attractor, e.g. the time at which the magnitude
+of NGRC solution exceeds some large  number (specifically 2); we thus compute 500
+values of Tesc (escape times), and plot the quartiles for them;
+%--------------------------------------------------------------------------
+plot_Tvp_Tesc_Lc_v5.m -> this file plots the graph;
+%--------------------------------------------------------------------------
+Tesc_tot_Lc_N500_tpr1e5.mat -> this data contains the results of computations
+of the NGRC DDE system learned by the HMR system; We here compute statistics of Tesc;
+Here the following values of Lc are scanned: 
+% Lc=[-0.08 -1 -2 -3 -3.2 -5 -10 -20]; 
+%--------------------------------------------------------------------------
+Tesc_tot_without_Lc_N500_tpr1e5.mat -> this data file contains the results of 
+computations of the NGRC DDE system learned by the HMR system; 
+We here compute statistics of Tesc;
+NOTE: Here is no requirement on Lc imposed!!!!------------------------
+%--------------------------------------------------------------------------
+Tvp_tot_Lc_N500_tpr1e3.mat -> this data contains the results of computations
+of the NGRC DDE system learned by the HMR system; We here compute statistics of Tvp; 
+Here the following values of Lc are scanned: 
+% Lc=[-0.08 -1 -2 -3 -3.2 -5 -10 -20];
+%--------------------------------------------------------------------------
+Tvp_tot_without_Lc_N500_tpr1e3.mat -> this data file contains the results of 
+computations of the NGRC DDE system learned by the HMR system; 
+We here compute statistics of Tvp;
+NOTE: Here is no requirement on Lc imposed!!!!------------------------
+%--------------------------------------------------------------------------
+
+
+  
