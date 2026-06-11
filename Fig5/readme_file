@@ -12,6 +12,9 @@ PDF is plotted vs the time intervals Tn;
 %--------------------------------------------------------------------------
 plot_HMR_map_pdf_v.m -> this file plots the graph;
 %--------------------------------------------------------------------------
+% Note that the following two files are absent in this repository, but they can be
+% computed and created as described in the NOTE below;
+%---------------------------------------------------------------------------
 Ut_dyn_v2t.mat -> this data file contains the time series of the original HMR 
 neuron model;
 XP_dyn_v2t.mat -> this data file contains the time series of the NGRC DDE
