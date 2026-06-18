@@ -1,4 +1,4 @@
-function mainT_chgpt()
+function mainT()
 % mainT_chgpt
 % Main driver for the NGRC signal comparison plots.
 %
