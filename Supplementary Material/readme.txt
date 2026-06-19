@@ -3,3 +3,6 @@ our paper;
 
 In the directories /KS_fugure/, /MG_figure/ and /Mont_figure/ we plot
 all the three graphs contained in the Supplementary Material;
+
+The directories /KS_matlab/, /MG_matlab/ and /Mont_matlab/ contain matlab
+programs which compute the data files necessary to plot the graphs;
