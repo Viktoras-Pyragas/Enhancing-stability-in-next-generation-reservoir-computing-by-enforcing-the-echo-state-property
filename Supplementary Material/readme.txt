@@ -6,3 +6,13 @@ all the three graphs contained in the Supplementary Material;
 
 The directories /KS_matlab/, /MG_matlab/ and /Mont_matlab/ contain matlab
 programs which compute the data files necessary to plot the graphs;
+
+%-----------------------------------------------------------------------------------
+
+Here we use the following abbreviartions:
+
+KS -> Kuramoto Sivashinsky
+
+MG -> Mackey-Glass
+
+Mont -> Montbrio (see the model described in DOI: 10.1103/PhysRevE.111.014422)
