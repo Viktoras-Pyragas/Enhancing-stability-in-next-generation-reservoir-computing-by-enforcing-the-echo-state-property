@@ -15,4 +15,4 @@ KS -> Kuramoto Sivashinsky
 
 MG -> Mackey-Glass
 
-Mont -> Montbrio (see the model described in DOI: 10.1103/PhysRevE.111.014422)
+Mont -> Montbrio (see the model description in DOI: 10.1103/PhysRevE.111.014422)
