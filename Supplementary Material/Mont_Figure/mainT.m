@@ -1,5 +1,5 @@
 function mainT()
-% mainT_chgpt
+% mainT
 % Main driver for the NGRC signal comparison plots.
 %
 % The script loads time-series data from TUV.mat, where TUV contains time,
