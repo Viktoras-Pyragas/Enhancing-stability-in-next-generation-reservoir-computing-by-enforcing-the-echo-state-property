@@ -11,8 +11,8 @@ programs which compute the data files necessary to plot the graphs;
 
 Here we use the following abbreviartions:
 
-KS -> Kuramoto Sivashinsky
+KS -> Kuramoto Sivashinsky (see the model description in DOI: 10.1103/PhysRevE.108.054220)
 
-MG -> Mackey-Glass
+MG -> Mackey-Glass (see the model description in DOI:10.4249/scholarpedia.6908)
 
 Mont -> Montbrio (see the model description in DOI: 10.1103/PhysRevE.111.014422)
