@@ -63,6 +63,5 @@ of the hybrid NGRC-Ch algorithm which is described in detail in the file
 In the directory /Supplementary_Material/ we provide the matlab files for plotting
 the graphs in the Supplementary Material of our paper;
 
-%--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
