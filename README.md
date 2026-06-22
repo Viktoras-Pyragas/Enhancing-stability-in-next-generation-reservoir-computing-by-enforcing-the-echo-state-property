@@ -57,5 +57,11 @@ The time series (necessary for Fig5) are computed in directory
 The bifurcation diagram for Fig6(b) is computed using the extended version 
 of the hybrid NGRC-Ch algorithm which is described in detail in the file
 [Additional_Supplementary_Material.pdf];
+%--------------------------------------------------------------------------
+
+In the directory /Supplementary_Material/ we provide the matlab files for plotting
+the graphs in the Supplementary Material of our paper;
+
+%--------------------------------------------------------------------------
 
 %--------------------------------------------------------------------------
