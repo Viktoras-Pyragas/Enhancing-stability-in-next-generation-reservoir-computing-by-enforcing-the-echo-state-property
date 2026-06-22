@@ -9,7 +9,7 @@ programs which compute the data files necessary to plot the graphs;
 
 %-----------------------------------------------------------------------------------
 
-Here we use the following abbreviartions:
+Here we use the following abbreviations:
 
 KS -> Kuramoto Sivashinsky (see the model description in DOI: 10.1103/PhysRevE.108.054220)
 
